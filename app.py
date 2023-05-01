@@ -1,5 +1,12 @@
 
 import streamlit as st
+css = """
+  <style>
+  #MainMenu {visibility: hidden;}
+  </style>
+  """
+st.markdown(css, unsafe_allow_html=True)
+
 import openai
 
 # Streamlit Community Cloudの「Secrets」からOpenAI API keyを取得
